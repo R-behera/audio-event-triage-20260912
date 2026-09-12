@@ -1,0 +1,163 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "audio-event-triage",
+  "title": "Audio Event Triage Baseline",
+  "domain": "audio-ml",
+  "mode": "classifier",
+  "labels": [
+    "alarm",
+    "machinery",
+    "speech"
+  ],
+  "prototypes": {
+    "alarm": {
+      "2100": 3,
+      "high": 3,
+      "energy": 3,
+      "repeating": 5,
+      "tone": 5,
+      "peak": 3,
+      "frequency": 3,
+      "synthetic": 5,
+      "alarm": 3,
+      "feature": 5,
+      "summary": 5,
+      "in": 2,
+      "an": 3,
+      "operations": 2,
+      "review": 2,
+      "for": 1,
+      "evaluation": 1,
+      "case": 1,
+      "pulse": 2,
+      "bright": 2,
+      "spectrum": 2,
+      "urgent": 2,
+      "alert": 2
+    },
+    "machinery": {
+      "in": 2,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "low": 5,
+      "frequency": 2,
+      "continuous": 2,
+      "vibration": 5,
+      "high": 2,
+      "zero": 2,
+      "crossing": 2,
+      "stability": 2,
+      "synthetic": 5,
+      "rotating": 2,
+      "equipment": 2,
+      "feature": 5,
+      "summary": 5,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "steady": 3,
+      "hum": 3,
+      "harmonic": 3,
+      "pitch": 3,
+      "motor": 3
+    },
+    "speech": {
+      "variable": 2,
+      "pitch": 4,
+      "moderate": 2,
+      "energy": 2,
+      "speech": 2,
+      "cadence": 2,
+      "synthetic": 4,
+      "spoken": 2,
+      "segment": 2,
+      "feature": 4,
+      "summary": 4,
+      "for": 2,
+      "an": 3,
+      "evaluation": 2,
+      "case": 2,
+      "in": 1,
+      "operations": 1,
+      "review": 1,
+      "syllabic": 2,
+      "rhythm": 2,
+      "changing": 2,
+      "voice": 4,
+      "activity": 2
+    }
+  },
+  "idf": {
+    "synthetic": 1,
+    "alarm": 2.252763,
+    "feature": 1,
+    "summary": 1,
+    "rotating": 2.252763,
+    "equipment": 2.252763,
+    "spoken": 2.252763,
+    "segment": 2.252763,
+    "alert": 2.252763,
+    "motor": 2.252763,
+    "voice": 2.252763
+  },
+  "documents": [
+    {
+      "id": "audio-01",
+      "label": "alarm",
+      "text": "Synthetic alarm feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    },
+    {
+      "id": "audio-02",
+      "label": "machinery",
+      "text": "Synthetic rotating equipment feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    },
+    {
+      "id": "audio-03",
+      "label": "speech",
+      "text": "Synthetic spoken segment feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    },
+    {
+      "id": "audio-04",
+      "label": "alarm",
+      "text": "Synthetic alert feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    },
+    {
+      "id": "audio-05",
+      "label": "machinery",
+      "text": "Synthetic motor feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    },
+    {
+      "id": "audio-06",
+      "label": "speech",
+      "text": "Synthetic voice feature summary.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "audio-ml"
+      }
+    }
+  ],
+  "graph_edges": [],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}

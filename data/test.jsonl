@@ -1,0 +1,4 @@
+{"id":"audio-event-triage-2-1","input":"low frequency continuous vibration high zero crossing stability","label":"machinery","context":"Synthetic rotating equipment feature summary.","source":"audio-02","variant":"direct","synthetic":true}
+{"id":"audio-event-triage-3-2","input":"In an operations review, variable pitch moderate energy speech cadence","label":"speech","context":"Synthetic spoken segment feature summary.","source":"audio-03","variant":"operations","synthetic":true}
+{"id":"audio-event-triage-4-3","input":"For an evaluation case, repeating pulse bright spectrum urgent tone","label":"alarm","context":"Synthetic alert feature summary.","source":"audio-04","variant":"evaluation","synthetic":true}
+{"id":"audio-event-triage-6-1","input":"syllabic rhythm changing pitch voice activity","label":"speech","context":"Synthetic voice feature summary.","source":"audio-06","variant":"direct","synthetic":true}

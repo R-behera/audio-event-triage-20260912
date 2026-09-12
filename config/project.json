@@ -1,0 +1,52 @@
+{
+  "name": "Audio Event Triage Baseline",
+  "problem": "Operations teams need an explainable starting point for classifying alarms, machinery noise, and speech-like events.",
+  "domain": "audio-ml",
+  "architecture": "classifier",
+  "hugging_face_tasks": [
+    "audio-classification",
+    "automatic-speech-recognition",
+    "feature-extraction",
+    "audio-to-audio"
+  ],
+  "recommended_stack": [
+    "FastAPI for audio metadata and prediction APIs",
+    "Transformers with Wav2Vec2 or audio spectrogram models",
+    "librosa or torchaudio for feature extraction",
+    "MLflow for experiment and model registry",
+    "Object storage for licensed audio",
+    "OpenTelemetry for inference latency and error traces"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "Freesound API",
+      "url": "https://freesound.org/apiv2/search/text/?query=alarm&page_size=5",
+      "purpose": "Licensed public audio search when an API key is configured"
+    },
+    {
+      "name": "Hugging Face Datasets API",
+      "url": "https://huggingface.co/api/datasets?search=audio-classification&limit=5",
+      "purpose": "Discover public audio datasets and metadata"
+    }
+  ],
+  "job_description_skills": [
+    "Audio feature pipelines and model fine-tuning",
+    "Class imbalance and macro-metric evaluation",
+    "Streaming inference and confidence calibration",
+    "Dataset licensing and provenance controls",
+    "Model monitoring and human review workflows"
+  ],
+  "impact_targets": [
+    "Reach macro recall >= 0.85 on a licensed evaluation set",
+    "Review every prediction below the confidence threshold",
+    "Process one minute of audio in under five seconds",
+    "Track class-level drift and false-negative rates"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}
